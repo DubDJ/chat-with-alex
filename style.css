@@ -36,9 +36,45 @@ body {
   font-family: sans-serif;
 }
 
+.container {
+}
+
+/* Menu nav bar */
+.nav {
+  /*
+  position:absolute;
+  top:0;
+  left: 0;
+  z-index: 1000;
+  width: 100%;
+  */
+}
+
+.nav ul {
+  padding-left: 0;
+  border: 1px solid grey;
+}
+
+.nav ul li {
+  list-style-type: none;
+  padding: 10px;
+  background-color: lightgrey;
+  display: block;
+}
+
+.nav ul li:hover {
+  background-color: white;
+}
+
+.nav ul li a {
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
 .center {
   text-align: center;
 }
+
 .alex {
   text-align: center;
 }
@@ -46,9 +82,11 @@ body {
 .alex input {
   height: 40px;
   width: 80%;
+  font-size: 16px;
 }
 
 .alex input:focus {
+  font-size: 16px;
 }
 
 .alex button {

@@ -127,3 +127,18 @@ https://github.com/sitepoint-editors/Api-AI-Personal-Assistant-Demo */
     $("#speechResponse").addClass("is-active").find(".response-text").html(val);
     document.getElementById('speech').value=null;
   }
+
+  // Menu toggle
+  $(document).ready(function(){
+      $(".nav").hide();
+      $("#menu").click(function(){
+          $(".nav").toggle(1000);
+      });
+  });
+  $(document).on('click', function(e) {
+      if ( $(e.target).closest('#menu').length ) {
+          $(".nav").show();
+      } else if ( ! $(e.target).closest('.nav').length ) {
+          $('.nav').hide(1000);
+      }
+  });
