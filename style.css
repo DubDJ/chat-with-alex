@@ -1,0 +1,29 @@
+* {
+}
+
+body {
+  margin: 20%;
+  font-family: sans-serif;
+}
+
+.alex {
+  text-align: center;
+}
+
+.alex input {
+  height: 40px;
+  width: 400px;
+  font-size: 1.5em;
+}
+
+.alex input:focus {
+}
+
+.alex button {
+  vertical-align: top;
+  height: 46px;
+  width: 100px;
+}
+
+.alex button:hover {
+}
