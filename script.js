@@ -1,3 +1,4 @@
+// api.ai - HTML+JS API offered by service.
 /* Tweaked API script from:
 https://github.com/sitepoint-editors/Api-AI-Personal-Assistant-Demo */
   var accessToken = "ad2458e9d7764998a03ddffe1332ab1e",
