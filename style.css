@@ -40,6 +40,15 @@ body {
 }
 
 /* Menu nav bar */
+#menu-button {
+  position:absolute;
+  top: 0;
+  left: 0;
+  padding: 10px;
+  margin: 10px;
+  font-size: 40px;
+  cursor: pointer;
+}
 .nav {
   /*
   position:absolute;
@@ -52,13 +61,12 @@ body {
 
 .nav ul {
   padding-left: 0;
-  border: 1px solid grey;
+  background-color: lightgrey;
 }
 
 .nav ul li {
   list-style-type: none;
   padding: 10px;
-  background-color: lightgrey;
   display: block;
 }
 
@@ -66,9 +74,14 @@ body {
   background-color: white;
 }
 
+.nav ul li:hover a {
+  color: darkgrey;
+}
+
 .nav ul li a {
   text-decoration: none;
   text-transform: uppercase;
+  color: white;
 }
 
 .center {
@@ -77,12 +90,15 @@ body {
 
 .alex {
   text-align: center;
+  margin-top: 10%;
 }
 
 .alex input {
   height: 40px;
   width: 80%;
   font-size: 16px;
+  border: 1px solid grey;
+  border-radius: 3px;
 }
 
 .alex input:focus {
@@ -92,7 +108,11 @@ body {
 .alex button {
   height: 40px;
   width: 15%;
+  border: 1px solid grey;
+  border-radius: 3px;
 }
 
 .alex button:hover {
+  cursor: pointer;
+  background-color: darkgrey;
 }
