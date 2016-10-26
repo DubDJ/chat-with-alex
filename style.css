@@ -110,6 +110,7 @@ body {
   border-radius: 3px;
   padding: 5px;
   color: #6C7A89;
+  -webkit-appearance: none;
 }
 
 .alex input:focus {
