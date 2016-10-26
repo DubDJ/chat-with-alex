@@ -34,6 +34,8 @@
 /* Main CSS */
 body {
   font-family: sans-serif;
+  color: #6C7A89;
+  background-color: #ecf0f1;
 }
 
 .container {
@@ -47,21 +49,21 @@ body {
   padding: 10px;
   margin: 10px;
   font-size: 40px;
+  color: #34495e;
   cursor: pointer;
 }
 .nav {
-  /*
+  margin: 20px 0 0 0px;
   position:absolute;
   top:0;
   left: 0;
   z-index: 1000;
   width: 100%;
-  */
 }
 
 .nav ul {
   padding-left: 0;
-  background-color: lightgrey;
+  background-color: rgba(255, 255, 255, 0.8);
 }
 
 .nav ul li {
@@ -71,17 +73,18 @@ body {
 }
 
 .nav ul li:hover {
-  background-color: white;
+  border-bottom: 2px solid #34495e;
 }
 
 .nav ul li:hover a {
-  color: darkgrey;
+  color: #34495e;
 }
 
 .nav ul li a {
   text-decoration: none;
   text-transform: uppercase;
-  color: white;
+  font-weight: bolder;
+  color: #34495e;
 }
 
 .center {
@@ -97,22 +100,25 @@ body {
   height: 40px;
   width: 80%;
   font-size: 16px;
-  border: 1px solid grey;
+  border: solid 1px #dcdcdc;
+  transition: box-shadow 0.3s, border 0.3s;
   border-radius: 3px;
+  padding: 5px;
+  color: #6C7A89;
 }
 
 .alex input:focus {
-  font-size: 16px;
 }
 
 .alex button {
   height: 40px;
   width: 15%;
-  border: 1px solid grey;
+  border: solid 1px #dcdcdc;
+  transition: box-shadow 0.3s, border 0.3s;
   border-radius: 3px;
 }
 
 .alex button:hover {
   cursor: pointer;
-  background-color: darkgrey;
+  background-color: white;
 }
