@@ -125,7 +125,7 @@ https://github.com/sitepoint-editors/Api-AI-Personal-Assistant-Demo */
     }
 
     $("#speechResponse").addClass("is-active").find(".response-text").html(val);
-    document.getElementById('speech').value=null;
+    document.getElementById('speech').value=null; // Clears previous input after submit.
   }
 
   // Menu toggle
