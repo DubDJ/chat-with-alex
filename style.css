@@ -101,6 +101,11 @@ body {
   margin-top: 20px;
 }
 
+.alex .text-input {
+  line-height: 40px;
+  height: 40px;
+}
+
 .alex input {
   height: 40px;
   width: 75%;
@@ -110,6 +115,7 @@ body {
   border-radius: 3px;
   padding: 5px;
   color: #6C7A89;
+  vertical-align: middle;
   -webkit-appearance: none;
 }
 
@@ -125,7 +131,7 @@ body {
   border: solid 1px #dcdcdc;
   transition: box-shadow 0.3s, border 0.3s;
   border-radius: 3px;
-  top: 0;
+  vertical-align: middle;
 }
 
 .alex button:hover {
