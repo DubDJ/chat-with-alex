@@ -42,46 +42,8 @@ body {
 .container {
 }
 
-/* Menu nav bar
-
-.nav {
-  margin-top: 30px;
-  position:absolute;
-  top:0;
-  left: 0;
-  z-index: 1000;
-  width: 100%;
-}
-
-.nav ul {
-  padding-left: 0;
-  background-color: rgba(255, 255, 255, 0.8);
-}
-
-.nav ul li {
-  list-style-type: none;
-  padding: 10px;
-  display: block;
-}
-
-.nav ul li:hover {
-  border-bottom: 2px solid #34495e;
-}
-
-.nav ul li:hover a {
-  color: #34495e;
-}
-
-.nav ul li a {
-  text-decoration: none;
-  text-transform: uppercase;
-  font-weight: bolder;
-  color: #34495e;
-}
-
-*/
-
 /* Overlay menu */
+/* Menu bars */
 #menu-button {
   position:absolute;
   top: 0;
@@ -93,15 +55,19 @@ body {
   cursor: pointer;
 }
 
+#menu-button:hover {
+  color: #517394;
+}
+
 .overlay {
     height: 0%;
     width: 100%;
     position: fixed;
-    z-index: 1;
+    z-index: 1000;
     top: 0;
     left: 0;
     background-color: rgb(0,0,0);
-    background-color: rgba(0,0,0, 0.9);
+    background-color: rgba(0,0,0, 0.8);
     overflow-y: hidden;
     transition: 1s;
 }
@@ -112,15 +78,6 @@ body {
     width: 100%;
     text-align: center;
     margin-top: 30px;
-}
-
-.overlay-content ul {
-  margin-left: 0;
-  display: block;
-}
-
-.overlay-content ul li {
-  list-style-type: none;
 }
 
 .overlay a {
@@ -142,17 +99,6 @@ body {
     left: 45px;
     font-size: 60px;
 }
-
-@media screen and (max-height: 450px) {
-  .overlay {overflow-y: auto;}
-  .overlay a {font-size: 20px}
-  .overlay .closebtn {
-    font-size: 40px;
-    top: 15px;
-    left: 35px;
-  }
-}
-
 
 .center {
   text-align: center;
@@ -194,6 +140,7 @@ body {
   height: 40px;
   width: 20%;
   color: #6C7A89;
+  background-color: #fff;
   border: solid 1px #dcdcdc;
   transition: box-shadow 0.3s, border 0.3s;
   border-radius: 3px;
@@ -202,7 +149,6 @@ body {
 
 .alex button:hover {
   cursor: pointer;
-  background-color: white;
   border-color: transparent;
   font-weight: bold;
 }
