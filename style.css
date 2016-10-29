@@ -44,19 +44,18 @@ body {
 
 /* Overlay menu */
 /* Menu bars */
-#menu-button {
+#menu-open, #menu-close {
   position:absolute;
   top: 0;
   left: 0;
   padding: 10px;
   margin: 10px;
   font-size: 40px;
-  color: #34495e;
   cursor: pointer;
 }
 
-#menu-button:hover {
-  color: #517394;
+#menu-close:hover {
+  color: #f1f1f1;
 }
 
 .overlay {
@@ -91,13 +90,6 @@ body {
 
 .overlay a:hover, .overlay a:focus {
     color: #f1f1f1;
-}
-
-.overlay .closebtn {
-    position: absolute;
-    top: 20px;
-    left: 45px;
-    font-size: 60px;
 }
 
 .center {
