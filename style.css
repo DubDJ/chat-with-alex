@@ -111,7 +111,7 @@ body {
   height: 40px;
 }
 
-.alex input {
+input, textarea {
   height: 40px;
   width: 75%;
   font-size: 16px;
@@ -124,11 +124,11 @@ body {
   -webkit-appearance: none;
 }
 
-.alex input:focus {
+input:focus, textarea:focus {
   border-color: transparent;
 }
 
-.alex button {
+button {
   height: 40px;
   width: 20%;
   color: #6C7A89;
@@ -139,7 +139,7 @@ body {
   vertical-align: middle;
 }
 
-.alex button:hover {
+button:hover {
   cursor: pointer;
   border-color: transparent;
   font-weight: bold;
@@ -148,4 +148,29 @@ body {
 .speech-response {
   margin-top: 50px;
   font-weight: bolder;
+}
+
+/* Contact form */
+#contact-form input {
+  margin: 10px;
+}
+
+#contact-form textarea {
+  height: 100px;
+  margin: 10px;
+}
+
+#contact-form button {
+  width: 75%;
+}
+
+ fieldset {
+   border: solid 1px #dcdcdc;
+   border-radius: 3px;
+   margin-top: 15%;
+}
+
+legend {
+  font-size: 16px;
+  font-weight: bold;
 }
