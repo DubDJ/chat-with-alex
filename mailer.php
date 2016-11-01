@@ -6,7 +6,7 @@
     $from = 'From: Chat with Alex';
     $subject = 'Contact Form/Bug Fix';
 
-    $body = "From: $name\n E-Mail Address: $email\n Message:\n $message";
+    $body = "From: $name\n E-Mail Address: $email\n Message: $message";
 
     if (!empty($message)) {
       if (mail ($to, $subject, $body, $from)) {

@@ -40,6 +40,7 @@ body {
 }
 
 .container {
+  margin-top: 10%;
 }
 
 /* Overlay menu */
@@ -52,6 +53,22 @@ body {
   margin: 10px;
   font-size: 40px;
   cursor: pointer;
+}
+
+#menu-open {
+  border: 1px solid #6C7A89;
+  border-radius: 50%;
+  height: 60px;
+  width: 60px;
+}
+
+#menu-close {
+  margin-left: 14px;
+}
+
+#menu-open:hover {
+  color: #7e8c9a;
+  border-color: #7e8c9a;
 }
 
 #menu-close:hover {
@@ -167,7 +184,6 @@ button:hover {
  fieldset {
    border: solid 1px #dcdcdc;
    border-radius: 3px;
-   margin-top: 15%;
 }
 
 legend {
@@ -183,4 +199,8 @@ legend {
 #contact-form .message a {
   text-transform: uppercase;
   color:inherit;
+}
+
+.left-paragraph {
+  text-align: left;
 }
