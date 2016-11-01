@@ -136,3 +136,11 @@ function openNav() {
 function closeNav() {
     document.getElementById("nav").style.height = "0%";
 }
+
+function validateForm() {
+    var msg = document.forms["contact"]["message"].value;
+    if (msg == null || msg == "") {
+      alert("Please enter a message")
+      return false;
+    }
+}

@@ -26,7 +26,7 @@
     <div id="contact-form" class="row">
       <div class="col-3"></div>
       <div class="col-6">
-        <form method="post" action="mailer.php" autocomplete="on">
+        <form name="contact" method="post" action="mailer.php" autocomplete="on" onsubmit="return validateForm()">
           <fieldset>
             <legend>Contact/Report a Bug</legend>
             <input type="text" name="name" placeholder="John Smith" maxlength="70"/><br/>
