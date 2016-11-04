@@ -74,9 +74,9 @@ https://github.com/sitepoint-editors/Api-AI-Personal-Assistant-Demo */
     send();
   }
 
-  function updateRec() {
+/*  function updateRec() {
     $recBtn.text(recognition ? "Stop" : "Speak");
-  }
+  } */
 
   function send() {
     var text = $speechInput.val();
@@ -144,3 +144,14 @@ function validateForm() {
       return false;
     }
 }
+
+function voiceInput() {
+
+  var isChrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
+  if (isChrome) {
+    console.log("Voice input available");
+  } else {
+    console.log("Voice input unavailable");
+    document.getElementById('rec').style.display="none";
+  }
+};

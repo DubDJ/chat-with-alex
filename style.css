@@ -116,7 +116,7 @@ body {
 
 .alex {
   text-align: center;
-  margin-top: 75px;
+  margin-top: 50px;
 }
 
 .alex #avatar {
@@ -124,22 +124,21 @@ body {
   margin-top: 20px;
 }
 
-.text-input {
-  line-height: 40px;
-  height: 40px;
+.alex button {
+  font-size: 1.5em;
 }
 
 input, textarea {
   height: 40px;
-  width: 75%;
+  width: 100%;
   font-size: 16px;
   border: solid 1px #dcdcdc;
   transition: box-shadow 0.3s, border 0.3s;
   border-radius: 3px;
   padding: 5px;
   color: #6C7A89;
-  vertical-align: middle;
   -webkit-appearance: none;
+  margin: 5px 0 5px 0;
 }
 
 input:focus, textarea:focus {
@@ -148,13 +147,13 @@ input:focus, textarea:focus {
 
 button {
   height: 40px;
-  width: 20%;
+  width: 100%;
   color: #6C7A89;
   background-color: #fff;
   border: solid 1px #dcdcdc;
   transition: box-shadow 0.3s, border 0.3s;
   border-radius: 3px;
-  vertical-align: middle;
+  margin-top: 5px;
 }
 
 button:hover {
@@ -164,22 +163,13 @@ button:hover {
 }
 
 .speech-response {
-  margin-top: 50px;
   font-weight: bolder;
+  margin: 10px;
 }
 
 /* Contact form */
-#contact-form input {
-  margin: 10px;
-}
-
 #contact-form textarea {
   height: 100px;
-  margin: 10px;
-}
-
-#contact-form button {
-  width: 75%;
 }
 
  fieldset {

@@ -10,7 +10,7 @@
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
   <script type="text/javascript" src="script.js"></script>
 </head>
-<body>
+<body onload="voiceInput();">
 
   <div class="container center">
     <i id="menu-open" class="fa fa-bars" aria-hidden="true" onclick="openNav()"></i>
@@ -29,9 +29,9 @@
         <div class="col-3"></div>
         <div class="text-input col-6">
           <input id="speech" name="speech-input" type="text" title="Enter a question for Alex" placeholder="Say Hi, or ask a question" autofocus/>
-          <button id="rec" class="btn" title="Click to speak with voice input">Speak</button>
         </div><!--/.text-input-->
-        <div class="col-3"></div>
+        <div class="col-1"><button id="rec" class="btn" title="Click to speak with voice input"><i class="fa fa-microphone" aria-hidden="true"></i></button></div>
+        <div class="col-2"></div>
       </div><!--.row-->
       <div id="speechResponse" class="speech-response">
         <div class="response-text"></div>
