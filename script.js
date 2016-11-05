@@ -137,7 +137,7 @@ function closeNav() {
     document.getElementById("nav").style.height = "0%";
 }
 
-function validateForm() {
+function validateForm() { //Validates the contact form
     var msg = document.forms["contact"]["message"].value;
     if (msg == null || msg == "") {
       alert("Please enter a message")
@@ -145,7 +145,7 @@ function validateForm() {
     }
 }
 
-function voiceInput() {
+function voiceInput() { // Js function that shows voice input only for suported browsers.
 
   var isChrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
   if (isChrome) {
