@@ -132,20 +132,20 @@ https://github.com/sitepoint-editors/Api-AI-Personal-Assistant-Demo */
 function openNav() {
     document.getElementById("nav").style.height = "100%";
 }
-
 function closeNav() {
     document.getElementById("nav").style.height = "0%";
 }
 
-function validateForm() { //Validates the contact form
+// Validates the contact form
+function validateForm() {
     var msg = document.forms["contact"]["message"].value;
     if (msg == null || msg == "") {
       alert("Please enter a message")
       return false;
     }
 }
-
-function voiceInput() { // Js function that shows voice input only for suported browsers.
+// Js function that shows voice input only for suported browsers.
+function voiceInput() {
 
   var isChrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
   if (isChrome) {
@@ -155,3 +155,13 @@ function voiceInput() { // Js function that shows voice input only for suported 
     document.getElementById('rec').style.display="none";
   }
 };
+
+$(document).ready(function() {
+  $('.container').fadeIn(800);
+  $('#suggested-questions').click(function() {
+    $("#questions-div").slideToggle(800);
+  })
+  $('#questions-close').click(function() {
+    $("#questions-div").slideUp(800);
+  })
+});

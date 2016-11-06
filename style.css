@@ -1,3 +1,11 @@
+/* Custom font */
+@font-face {
+  font-family: 'Kite One';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Kite One'), local('KiteOne-Regular'), url(https://fonts.gstatic.com/s/kiteone/v4/EsOdvuRhp6mCNgnbcmDDcPesZW2xOQ-xsNqO47m55DA.woff2) format('woff2');
+}
+
 /* Responsive CSS */
 * {
     box-sizing: border-box;
@@ -33,7 +41,7 @@
 
 /* Main CSS */
 body {
-  font-family: sans-serif;
+  font-family: 'Kite One', sans-serif;
   color: #6C7A89;
   background-color: #ecf0f1;
   margin:0;
@@ -41,6 +49,7 @@ body {
 
 .container {
   margin-top: 10%;
+  display: none;
 }
 
 /* Overlay menu */
@@ -116,12 +125,22 @@ body {
 
 .alex {
   text-align: center;
-  margin-top: 50px;
+}
+
+@media only screen and (max-width: 415px) {
+  .alex {
+    margin-top: 25%;
+  }
+  .text-input {
+    height: 40px;
+  }
+  #suggested-questions {
+    top: 25px;
+  }
 }
 
 .alex #avatar {
   font-size: 200px;
-  margin-top: 20px;
 }
 
 .alex button {
@@ -132,9 +151,10 @@ input, textarea {
   height: 40px;
   width: 100%;
   font-size: 16px;
+  font-family: 'Kite One';
   border: solid 1px #dcdcdc;
   transition: box-shadow 0.3s, border 0.3s;
-  border-radius: 3px;
+  border-radius: 5px;
   padding: 5px;
   color: #6C7A89;
   -webkit-appearance: none;
@@ -152,7 +172,7 @@ button {
   background-color: #fff;
   border: solid 1px #dcdcdc;
   transition: box-shadow 0.3s, border 0.3s;
-  border-radius: 3px;
+  border-radius: 5px;
   margin-top: 5px;
 }
 
@@ -162,9 +182,50 @@ button:hover {
   font-weight: bold;
 }
 
+.text-input {
+  position: relative;
+}
+
+#suggested-questions {
+    position:absolute;
+    bottom:15px;
+    right:25px;
+    height:40px;
+    font-size: 2em;
+    opacity: 0.5;
+}
+
+#suggested-questions:hover {
+    cursor: pointer;
+}
+
+#speech::-ms-clear {
+  display:none;
+}
+
 .speech-response {
   font-weight: bolder;
-  margin: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+#questions-div {
+  display: none;
+  font-size: 1.2em;
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+#questions-div * {
+  margin: 2px;
+}
+
+#questions-div #questions-close {
+  cursor: pointer;
+}
+
+#questions-close:hover {
+  color: #7e8c9a;
 }
 
 /* Contact form */
@@ -174,7 +235,7 @@ button:hover {
 
  fieldset {
    border: solid 1px #dcdcdc;
-   border-radius: 3px;
+   border-radius: 5px;
 }
 
 legend {

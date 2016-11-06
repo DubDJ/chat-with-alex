@@ -13,9 +13,9 @@
 <body onload="voiceInput();">
 
   <div class="container center">
-    <i id="menu-open" class="fa fa-bars" aria-hidden="true" onclick="openNav()"></i>
+    <i id="menu-open" class="fa fa-bars" aria-hidden="true" onclick="openNav()" title="Open menu"></i>
     <div id="nav" class="overlay">
-      <i id="menu-close" class="fa fa-times" aria-hidden="true" onclick="closeNav()"></i>
+      <i id="menu-close" class="fa fa-times" aria-hidden="true" onclick="closeNav()" title="Close menu"></i>
       <div class="overlay-content">
         <a href="index.html">Home</a>
         <a href="resources.html">Resources</a>
@@ -29,6 +29,7 @@
         <div class="col-3"></div>
         <div class="text-input col-6">
           <input id="speech" name="speech-input" type="text" title="Enter a question for Alex" placeholder="Say Hi, or ask a question" autofocus/>
+          <i id="suggested-questions" class="fa fa-question-circle-o" aria-hidden="true" title="Click for suggest questions for alex"></i>
         </div><!--/.text-input-->
         <div class="col-1"><button id="rec" class="btn" title="Click to speak with voice input"><i class="fa fa-microphone" aria-hidden="true"></i></button></div>
         <div class="col-2"></div>
@@ -36,6 +37,17 @@
       <div id="speechResponse" class="speech-response">
         <div class="response-text"></div>
       </div>
+      <div class="row">
+        <div class="col-3"></div>
+        <div class="col-6">
+          <div id="questions-div">
+            <i id="questions-close" class="fa fa-times" aria-hidden="true"title="Close"></i>
+            <h3>Suggested Questions</h3>
+            <p>Here are some questions you can ask Alex.</p>
+          </div>
+        </div>
+        <div class="col-3"></div>
+      </div><!--/.row-->
     </div><!-- /.alex -->
   </div><!-- /.container -->
 
