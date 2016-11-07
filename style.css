@@ -228,6 +228,11 @@ button:hover {
   color: #7e8c9a;
 }
 
+ul.question-list {
+  list-style-type: circle;
+  text-align: left;
+}
+
 /* Contact form */
 #contact-form textarea {
   height: 100px;
