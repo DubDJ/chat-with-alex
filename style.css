@@ -54,18 +54,23 @@ body {
 
 /* Overlay menu */
 /* Menu bars */
+.menu-bar {
+  width: 100%;
+  background-color: rgba(236, 240, 241, 0.9);
+  position: fixed;
+  top:0;
+  text-align: left;
+}
+
 #menu-open, #menu-close {
-  position:absolute;
-  top: 0;
-  left: 0;
   padding: 10px;
   margin: 10px;
   font-size: 40px;
   cursor: pointer;
+  text-align: center;
 }
 
 #menu-open {
-  position: fixed;
   border: 1px solid #6C7A89;
   border-radius: 50%;
   height: 60px;
@@ -74,6 +79,9 @@ body {
 
 #menu-close {
   margin-left: 14px;
+  text-align: center;
+  position: absolute;
+  left: 0;
 }
 
 #menu-open:hover {
@@ -86,6 +94,7 @@ body {
   color: #f1f1f1;
 }
 
+/* Menu overlay*/
 .overlay {
     height: 0%;
     width: 100%;
@@ -101,7 +110,7 @@ body {
 
 .overlay-content {
     position: relative;
-    top: 25%;
+    top: 20%;
     width: 100%;
     text-align: center;
     margin-top: 30px;
@@ -131,7 +140,7 @@ body {
 
 @media only screen and (max-width: 415px) {
   .alex {
-    margin-top: 25%;
+    margin-top: 26%;
   }
   .text-input {
     height: 40px;
@@ -243,6 +252,7 @@ ul.question-list {
  fieldset {
    border: solid 1px #dcdcdc;
    border-radius: 5px;
+   margin-top: 20px;
 }
 
 legend {
