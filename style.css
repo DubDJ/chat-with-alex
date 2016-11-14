@@ -39,7 +39,7 @@
     .col-12 {width: 100%;}
 }
 
-/* Main CSS */
+/* Main Body CSS */
 body {
   font-family: 'Kite One', sans-serif;
   color: #6C7A89;
@@ -52,8 +52,18 @@ body {
   display: none;
 }
 
-/* Overlay menu */
-/* Menu bars */
+a:link, a:visited {
+  color: #9ba5b0;
+  text-decoration: none;
+}
+
+a:hover, a:active {
+  color: #434c56;
+  text-decoration: underline;
+}
+
+/* Navigation menu */
+/* Menu bar */
 .menu-bar {
   width: 100%;
   background-color: rgba(236, 240, 241, 0.9);
@@ -62,6 +72,7 @@ body {
   text-align: left;
 }
 
+/* Menu buttons */
 #menu-open, #menu-close {
   padding: 10px;
   margin: 10px;
@@ -134,30 +145,7 @@ body {
   text-align: center;
 }
 
-.alex {
-  text-align: center;
-}
-
-@media only screen and (max-width: 415px) {
-  .alex {
-    margin-top: 26%;
-  }
-  .text-input {
-    height: 40px;
-  }
-  #suggested-questions {
-    top: 25px;
-  }
-}
-
-.alex #avatar {
-  font-size: 200px;
-}
-
-.alex button {
-  font-size: 1.5em;
-}
-
+/* Inputs & buttons */
 input, textarea {
   height: 40px;
   width: 100%;
@@ -191,6 +179,31 @@ button:hover {
   cursor: pointer;
   border-color: transparent;
   font-weight: bold;
+}
+
+/* Home page content */
+.alex {
+  text-align: center;
+}
+
+@media only screen and (max-width: 415px) {
+  .alex {
+    margin-top: 26%;
+  }
+  .text-input {
+    height: 40px;
+  }
+  #suggested-questions {
+    top: 25px;
+  }
+}
+
+.alex #avatar {
+  font-size: 200px;
+}
+
+.alex button {
+  font-size: 1.5em;
 }
 
 .text-input {
@@ -244,7 +257,17 @@ ul.question-list {
   text-align: left;
 }
 
-/* Contact form */
+/* Resources Page */
+.info-panel {
+  border-left: 1px solid #6C7A89;
+  text-align: left;
+}
+
+.info-heading {
+  text-decoration: underline;
+}
+
+/* Contact Page */
 #contact-form textarea {
   height: 100px;
 }
@@ -260,6 +283,11 @@ legend {
   font-weight: bold;
 }
 
+label {
+  float: left;
+  margin: 10px 0 0 4px;
+}
+
 #contact-form .message {
   font-size: 2em;
   margin-top: 33%;
@@ -269,11 +297,3 @@ legend {
   text-transform: uppercase;
   color:inherit;
 }
-
-.left-paragraph {
-  text-align: left;
-}
- label {
-   float: left;
-   margin: 10px 0 0 4px;
- }
