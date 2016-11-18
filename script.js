@@ -1,6 +1,7 @@
 // api.ai - HTML+JS API offered by service.
-/* Tweaked API script from:
-https://github.com/sitepoint-editors/Api-AI-Personal-Assistant-Demo */
+/* Below is a tweaked API script taken from:
+https://github.com/sitepoint-editors/Api-AI-Personal-Assistant-Demo
+I've further editied it from the original version */
   var accessToken = "ad2458e9d7764998a03ddffe1332ab1e",
     baseUrl = "https://api.api.ai/v1/",
     $speechInput,
@@ -88,7 +89,7 @@ https://github.com/sitepoint-editors/Api-AI-Personal-Assistant-Demo */
       headers: {
         "Authorization": "Bearer " + accessToken
       },
-      data: JSON.stringify({q: text, lang: "en"}),
+      data: JSON.stringify({ query: text, lang: "en", sessionId: "somerandomthing" }),
 
       success: function(data) {
         prepareResponse(data);
@@ -125,7 +126,7 @@ https://github.com/sitepoint-editors/Api-AI-Personal-Assistant-Demo */
     }
 
     $("#speechResponse").addClass("is-active").find(".response-text").html(val);
-    document.getElementById('speech').value=null; // Clears previous input after submit.
+    document.getElementById('speech').value=null; // Clears input text after submit.
   }
 
 // Menu toggle
