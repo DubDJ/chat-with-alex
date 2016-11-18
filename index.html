@@ -65,7 +65,39 @@
         <div class="col-3"></div>
       </div><!--/.row-->
     </div><!-- /.alex -->
+    <!-- Info Modal -->
+    <div id="info-popup" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close">×</span>
+        <p>Here are some tips for using Alex.</p>
+      </div>
+    </div>
   </div><!-- /.container -->
+<script>
+  var modal = document.getElementById('info-popup');
+  var btn = document.getElementById("myBtn");
+  var span = document.getElementsByClassName("close")[0];
 
+  $(document).ready(function () {
+      if (localStorage.getItem('visited') !== null) {
+          console.log("Visited")
+      } else {
+          localStorage.setItem('visited', true);
+          modal.style.display = "block"
+      }
+  });
+
+  span.onclick = function() {
+      modal.style.display = "none";
+  }
+
+  // When the user clicks anywhere outside of the modal, close it
+  window.onclick = function(event) {
+      if (event.target == modal) {
+          modal.style.display = "none";
+      }
+  }
+</script>
 </body>
 </html>
