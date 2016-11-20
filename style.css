@@ -262,7 +262,7 @@ ul.question-list {
 
 /* The info-modal (background) */
 .modal {
-    display: block;
+    display: none;
     position: fixed;
     z-index: 1;
     padding-top: 75px;
