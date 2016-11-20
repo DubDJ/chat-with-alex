@@ -161,6 +161,9 @@ $(document).ready(function() {
   $('.container').fadeIn(800);
   $('#suggested-questions').click(function() {
     $("#questions-div").slideToggle(800);
+    $('html, body').animate({
+        scrollTop: $("#questions-div").offset().top
+    }, 2000);
   })
   $('#questions-close').click(function() {
     $("#questions-div").slideUp(800);
