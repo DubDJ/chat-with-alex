@@ -185,6 +185,7 @@ button:hover {
   text-align: center;
 }
 
+/* Mobile style fixes */
 @media only screen and (max-width: 415px) {
   .alex {
     margin-top: 26%;
@@ -261,7 +262,7 @@ ul.question-list {
 
 /* The info-modal (background) */
 .modal {
-    display: none;
+    display: block;
     position: fixed;
     z-index: 1;
     padding-top: 75px;
@@ -316,15 +317,17 @@ ul.question-list {
 
 .modal .tour-next {
   width: 100px;
-  font-weight: bold;
+  font: inherit;
   background-color: inherit;
   border: 2px solid #808080;
+  border-radius: 0;
   color: #808080;
 }
 
 .modal .tour-next:hover {
   border-color: #4d4d4d;
   color: #4d4d4d;
+  font-weight: bold;
 }
 
 .modal-content footer {

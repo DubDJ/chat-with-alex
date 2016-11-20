@@ -107,6 +107,7 @@
     var btn = document.getElementById("myBtn");
     var span = document.getElementsByClassName("close")[0];
 
+    // Checks if user has visited before
     $(document).ready(function () {
         if (localStorage.getItem('visited') !== null) {
             console.log("Visited")
@@ -116,6 +117,7 @@
         }
     });
 
+    // Modal close button
     span.onclick = function() {
         modal.style.display = "none";
     }
@@ -126,10 +128,16 @@
             modal.style.display = "none";
         }
     }
+
+    // Animations for walkthrough tour
     $('.tour:not(:first)').hide();
     $('#nextBtn').click(function(){
     $('.tour').filter(':visible').hide().next().add('.tour:first').last().fadeIn('slow');
-  })
+    // Changes button if last div
+    if ($('#tour-5').is(':visible')) {
+      $(".modal button").replaceWith('<button onClick="span.onclick()" class="tour-next">Finish</button>')
+    }
+    })
   </script>
 </body>
 </html>
