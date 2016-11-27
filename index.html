@@ -6,12 +6,9 @@
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-  <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="180x180" href="/favicons/apple-touch-icon.png" />
   <link rel="icon" type="image/png" href="/favicons/favicon-32x32.png" sizes="32x32" />
   <link rel="icon" type="image/png" href="/favicons/favicon-16x16.png" sizes="16x16" />
-  <link rel="manifest" href="/favicons/manifest.json" />
-  <link rel="mask-icon" href="/favicons/safari-pinned-tab.svg" />
-  <meta name="theme-color" content="#ecf0f1" />
 
   <link rel="stylesheet" href="style.css" />
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
@@ -38,7 +35,7 @@
       <div class="row">
         <div class="col-3"></div>
         <div class="text-input col-6">
-          <input id="speech" name="speech-input" type="text" title="Enter a question for Alex" placeholder="Say Hi, or ask a question" />
+          <input id="speech" name="speech-input" type="text" title="Enter a question for Alex" placeholder="Say Hi, or ask a question" autofocus />
           <i id="suggested-questions" class="fa fa-question-circle-o" aria-hidden="true" title="Click for suggest questions for Alex"></i>
         </div><!--/.text-input-->
         <div class="col-1"><button id="rec" class="btn" title="Click to speak with voice input"><i class="fa fa-microphone" aria-hidden="true"></i></button></div>
@@ -57,8 +54,9 @@
               <li>Can you help me?</li>
               <li>Can we chat?</li>
               <li>Can you tell me a joke?</li>
-              <li>I need a stress management service in Dublin.</li>
-              <li>I need a mental health service in Cork.</li>
+              <li>I'm feeling depressed.</li>
+              <li>I feel really anxious.</li>
+              <li>Tell Alex to stop at any time by saying "Stop".</li>
             </ul>
           </div>
         </div>
@@ -139,5 +137,6 @@
     }
     })
   </script>
+
 </body>
 </html>
