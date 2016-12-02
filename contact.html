@@ -18,36 +18,39 @@
 <body>
 
   <div class="container center">
-    <div class="menu-bar">
-      <i id="menu-open" class="fa fa-bars" aria-hidden="true" onclick="openNav()" title="Open menu"></i>
-    </div>
-    <div id="nav" class="overlay">
-      <i id="menu-close" class="fa fa-times" aria-hidden="true" onclick="closeNav()"></i>
-      <div class="overlay-content">
-        <a href="index.html">Home</a>
-        <a href="resources.html">Resources</a>
-        <a href="about.html">About</a>
-        <a href="contact.html">Contact</a>
-      </div><!--/.overlay-content-->
-    </div><!--/#nav-->
-    <div id="contact-form" class="row">
-      <div class="col-3"></div>
-      <div class="col-6">
-        <form name="contact" method="post" action="mailer.php" autocomplete="on" onsubmit="return validateForm()">
-          <fieldset>
-            <legend>Contact/Report a Bug</legend>
-            <label for="name">Name (Optional):</label>
-            <input type="text" id="name" name="name" placeholder="John Smith" maxlength="70"/><br/>
-            <label for="email">Email (Optional):</label>
-            <input type="email" id="email" name="email" placeholder="email@example.com" pattern="[^@]+@[^@]+\.[a-zA-Z]{2,6}" title="example@email.com" maxlength="64"/><br/>
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" rows="10" required></textarea><br/>
-            <button name="submit" type="submit" title="Submit message">Submit</button>
-          </fieldset>
-        </form>
+    <div id="content">
+      <div class="menu-bar">
+        <i id="menu-open" class="fa fa-bars" aria-hidden="true" onclick="openNav()" title="Open menu"></i>
       </div>
-      <div class="col-3"></div>
-    </div>
+      <div id="nav" class="overlay">
+        <i id="menu-close" class="fa fa-times" aria-hidden="true" onclick="closeNav()"></i>
+        <div class="overlay-content">
+          <a href="index.html">Home</a>
+          <a href="resources.html">Resources</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+        </div><!--/.overlay-content-->
+      </div><!--/#nav-->
+      <div id="contact-form" class="row">
+        <div class="col-3"></div>
+        <div class="col-6">
+          <form name="contact" method="post" action="mailer.php" autocomplete="on" onsubmit="return validateForm()">
+            <fieldset>
+              <legend>Contact/Report a Bug</legend>
+              <label for="name">Name (Optional):</label>
+              <input type="text" id="name" name="name" placeholder="John Smith" maxlength="70"/><br/>
+              <label for="email">Email (Optional):</label>
+              <input type="email" id="email" name="email" placeholder="email@example.com" pattern="[^@]+@[^@]+\.[a-zA-Z]{2,6}" title="example@email.com" maxlength="64"/><br/>
+              <label for="message">Message:</label>
+              <textarea id="message" name="message" rows="10" required></textarea><br/>
+              <button name="submit" type="submit" title="Submit message">Submit</button>
+            </fieldset>
+          </form>
+        </div>
+        <div class="col-3"></div>
+      </div>
+    </div><!--#content-->
+    <footer><p>This is the footer</p></footer>
   </div><!-- /.container -->
 
 </body>

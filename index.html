@@ -18,86 +18,89 @@
 <body onload="voiceInput();">
 
   <div class="container center">
-    <div class="menu-bar">
-      <i id="menu-open" class="fa fa-bars" aria-hidden="true" onclick="openNav()" title="Open menu"></i>
-    </div>
-    <div id="nav" class="overlay">
-      <i id="menu-close" class="fa fa-times" aria-hidden="true" onclick="closeNav()" title="Close menu"></i>
-      <div class="overlay-content">
-        <a href="index.html">Home</a>
-        <a href="resources.html">Resources</a>
-        <a href="about.html">About</a>
-        <a href="contact.html">Contact</a>
-      </div><!--/.overlay-content-->
-    </div><!--/#nav-->
-    <div class="alex">
-      <i id="avatar" class="avatar fa fa-user-circle-o" aria-hidden="true"></i>
-      <div class="row">
-        <div class="col-3"></div>
-        <div class="text-input col-6">
-          <input id="speech" name="speech-input" type="text" title="Enter a question for Alex" placeholder="Say Hi, or ask a question" autofocus />
-          <i id="suggested-questions" class="fa fa-question-circle-o" aria-hidden="true" title="Click for suggest questions for Alex"></i>
-        </div><!--/.text-input-->
-        <div class="col-1"><button id="rec" class="btn" title="Click to speak with voice input"><i class="fa fa-microphone" aria-hidden="true"></i></button></div>
-        <div class="col-2"></div>
-      </div><!--.row-->
-      <div id="speechResponse" class="speech-response">
-        <div class="response-text"></div>
+    <div id="content">
+      <div class="menu-bar">
+        <i id="menu-open" class="fa fa-bars" aria-hidden="true" onclick="openNav()" title="Open menu"></i>
       </div>
-      <div class="row">
-        <div class="col-3"></div>
-        <div class="col-6">
-          <div id="questions-div">
-            <i id="questions-close" class="fa fa-times" aria-hidden="true" title="Close"></i>
-            <p>Here are some questions you can ask Alex.</p>
-            <ul class="question-list">
-              <li>Can you help me?</li>
-              <li>Can we chat?</li>
-              <li>Can you tell me a joke?</li>
-              <li>I'm feeling depressed.</li>
-              <li>I feel really anxious.</li>
-              <li>Tell Alex to stop at any time by saying "Stop".</li>
-            </ul>
-          </div>
+      <div id="nav" class="overlay">
+        <i id="menu-close" class="fa fa-times" aria-hidden="true" onclick="closeNav()" title="Close menu"></i>
+        <div class="overlay-content">
+          <a href="index.html">Home</a>
+          <a href="resources.html">Resources</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+        </div><!--/.overlay-content-->
+      </div><!--/#nav-->
+      <div class="alex">
+        <i id="avatar" class="avatar fa fa-user-circle-o" aria-hidden="true"></i>
+        <div class="row">
+          <div class="col-3"></div>
+          <div class="text-input col-6">
+            <input id="speech" name="speech-input" type="text" title="Enter a question for Alex" placeholder="Say Hi, or ask a question" autofocus />
+            <i id="suggested-questions" class="fa fa-question-circle-o" aria-hidden="true" title="Click for suggest questions for Alex"></i>
+          </div><!--/.text-input-->
+          <div class="col-1"><button id="rec" class="btn" title="Click to speak with voice input"><i class="fa fa-microphone" aria-hidden="true"></i></button></div>
+          <div class="col-2"></div>
+        </div><!--.row-->
+        <div id="speechResponse" class="speech-response">
+          <div class="response-text"></div>
         </div>
-        <div class="col-3"></div>
-      </div><!--/.row-->
-    </div><!-- /.alex -->
-    <!-- Info Modal -->
-    <div id="info-popup" class="modal">
-      <!-- Modal content -->
-      <div class="modal-content">
-        <span class="close">×</span>
-        <div class="modal-container">
-          <div id="tour-1" class="tour">
-            <h2>Welcome to Chat with Alex</h2>
-            <p>This is a quick tour to highlight some of the features.</p>
-            <i class="avatar fa fa-user-circle-o" aria-hidden="true"></i>
+        <div class="row">
+          <div class="col-3"></div>
+          <div class="col-6">
+            <div id="questions-div">
+              <i id="questions-close" class="fa fa-times" aria-hidden="true" title="Close"></i>
+              <p>Here are some questions you can ask Alex.</p>
+              <ul class="question-list">
+                <li>Can you help me?</li>
+                <li>Can we chat?</li>
+                <li>Can you tell me a joke?</li>
+                <li>I'm feeling depressed.</li>
+                <li>I feel really anxious.</li>
+                <li>Tell Alex to stop at any time by saying "Stop".</li>
+              </ul>
+            </div>
           </div>
-          <div id="tour-2" class="tour">
-            <h2>Ask a question.</h2>
-            <p>Enter your question in the box and hit enter.</p>
-            <img src="img/tour-2.png" alt="Text entry box" />
-          </div>
-          <div id="tour-3" class="tour">
-            <h2>Recieving a reply.</h2>
-            <p>The reply will appear below the input box.</p>
-            <img src="img/tour-3.png" alt="Reply shown below" />
-          </div>
-          <div id="tour-4" class="tour">
-            <h2>What to ask.</h2>
-            <p>Click the icon to reveal suggested questions.</p>
-            <img src="img/tour-4.png" alt="Show questions button" />
-          </div>
-          <div id="tour-5" class="tour">
-            <h2>Navigate the site.</h2>
-            <p>Click the menu button to navigate the site.</p>
-            <img src="img/tour-5.png" alt="Menu button" />
-          </div>
-        </div><!--/.modal-container-->
-        <footer><button id="nextBtn" class="tour-next">Next ></button></footer>
-      </div><!--/.modal-content-->
-    </div>
+          <div class="col-3"></div>
+        </div><!--/.row-->
+      </div><!-- /.alex -->
+      <!-- Info Modal -->
+      <div id="info-popup" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close">×</span>
+          <div class="modal-container">
+            <div id="tour-1" class="tour">
+              <h2>Welcome to Chat with Alex</h2>
+              <p>This is a quick tour to highlight some of the features.</p>
+              <i class="avatar fa fa-user-circle-o" aria-hidden="true"></i>
+            </div>
+            <div id="tour-2" class="tour">
+              <h2>Ask a question.</h2>
+              <p>Enter your question in the box and hit enter.</p>
+              <img src="img/tour-2.png" alt="Text entry box" />
+            </div>
+            <div id="tour-3" class="tour">
+              <h2>Recieving a reply.</h2>
+              <p>The reply will appear below the input box.</p>
+              <img src="img/tour-3.png" alt="Reply shown below" />
+            </div>
+            <div id="tour-4" class="tour">
+              <h2>What to ask.</h2>
+              <p>Click the icon to reveal suggested questions.</p>
+              <img src="img/tour-4.png" alt="Show questions button" />
+            </div>
+            <div id="tour-5" class="tour">
+              <h2>Navigate the site.</h2>
+              <p>Click the menu button to navigate the site.</p>
+              <img src="img/tour-5.png" alt="Menu button" />
+            </div>
+          </div><!--/.modal-container-->
+          <footer><button id="nextBtn" class="tour-next">Next ></button></footer>
+        </div><!--/.modal-content-->
+      </div>
+    </div><!--#content-->
+    <footer><p>This is the footer</p></footer>
   </div><!-- /.container -->
   <!-- Local storage and modal scripts -->
   <script>
