@@ -362,7 +362,7 @@ ul.question-list {
   font-weight: bold;
 }
 
-.modal-content footer {
+.modal-content .footer {
   position: absolute;
   bottom: 0; left: 0; right: 0;
   margin: 5px;
